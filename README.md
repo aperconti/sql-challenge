@@ -1,38 +1,46 @@
 # sql-challenge
+# Project Overview:
+## Tools/Requirements
+The tools used for this project are:
+pandas,
+SQL, 
+Juypter,
+PgAdmin,
+sqlalchemy,
+matplotlib
 
-After inspecting the CSVs and sketching out an ERD of the tables. I used the information you have to create a table schema for each of the six CSV files. Specifying data types, primary keys, foreign keys, and other constraints.
+### Environment requirements:
+Pandas === 1.1.4
+SQL === 
+PgAdmin 4
 
-Next I imported each CSV file into the corresponding SQL table.
-
-
-Listed the following details of each employee: employee number, last name, first name, sex, and salary.
-
-
-Listed first name, last name, and hire date for employees who were hired in 1986.
-
-
-Listed the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
-
-
-Listed the department of each employee with the following information: employee number, last name, first name, and department name.
-
-
-Listed first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
-
-
-Listed all employees in the Sales department, including their employee number, last name, first name, and department name.
+## Objectives
+## Data sourcing and cleaning
+The first step of this project was inspecting the CSVs and sketching out an ERD of the tables. I used the information to create a table schema for each of the six CSV files. Specifying data types, primary keys, foreign keys, and other constraints.
 
 
-Listed all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+## Installation and Setup
+Process can be followed with these steps:
+
+1.Open postgres and PgAdmin.
+
+2.Create a new database in pgAdmin.
+
+3.Load the CSV's.
+
+4.Run queries in pgAdmin.
+
+5.Run juypter notebook for further analysis. 
+
+## Final Product and Conclusion
+The number of employees with repeating names is highly suspect. The only original name is April Fools.
+
+The job title and compensation raise concern, as well. The top paid employee is not an executive but instead a Technique Leader, which is a made-up job title. Furthermore, the minimum paid employee is an Assistant Engineer.
+
+The differences in pay, according to employee title, also raises concern. There are minimal increases in salary from Assistant to Senior level in engineering, with several Senior Engineers making a few dollars more than Assistant Engineers.
+
+These findings have lead me to believe that this dataset is not original.
+#### Contributors
+Autum Perconti
 
 
-Next in descending order, I listed the frequency count of employee last names.
-
-
-Imported the SQL database into Pandas. 
-
-
-Createed a histogram to visualize the most common salary ranges for employees.
-
-
-As well as a bar chart of average salary by title.
